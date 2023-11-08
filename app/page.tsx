@@ -1,4 +1,4 @@
-import { Box, Container, List, Stack, Typography } from '@mui/material';
+import { Container, List, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 import ListItemWithText from './components/ListItemWithText';
 
@@ -15,8 +15,8 @@ export default function Page() {
       >
         <Image
           src="/happy_new_year.png"
-          width={400}
-          height={400}
+          width={350}
+          height={350}
           quality={100}
           alt="Happy new year"
           style={{ borderRadius: '50%' }}

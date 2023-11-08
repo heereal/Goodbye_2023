@@ -2,7 +2,7 @@ import '@/app/global.css';
 import MUIThemeProvider from './lib/ThemeProvider';
 
 export const metadata = {
-  title: '초대합니다.',
+  title: '우리의 연말 파티에 초대합니다.',
   description: 'Goodbye to our twenties',
 };
 
