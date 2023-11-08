@@ -2,4 +2,23 @@
 
 * {
   font-family: 'Pretendard Variable';
+  font-size: '16px';
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(limegreen, transparent),
+    linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(-90deg, coral, transparent);
+  background-blend-mode: screen;
+}
+
+body {
+  color: #4b4b4b;
+  text-align: right;
+}
+
+li {
+  line-height: 1.8;
+  margin: 0;
 }
