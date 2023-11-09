@@ -1,6 +1,19 @@
 import { ListItem, ListItemText, Typography } from '@mui/material';
+import { ReactNode } from 'react';
 
-export default function ListItemWithText({ value, label }) {
+type Props = {
+  label: string;
+  value?: string;
+  children?: ReactNode;
+  align?: 'column' | 'row';
+};
+
+export default function ListItemWithText({
+  label,
+  value,
+  children,
+  align = 'row',
+}: Props) {
   const fontSize = 16;
 
   return (
@@ -16,13 +29,15 @@ export default function ListItemWithText({ value, label }) {
           </Typography>
         }
         secondary={
-          <Typography variant="body2" sx={{ fontSize }}>
-            {value}
-          </Typography>
+          children || (
+            <Typography variant="body2" sx={{ fontSize }}>
+              {value}
+            </Typography>
+          )
         }
         sx={{
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: align,
           my: 0,
         }}
       />
