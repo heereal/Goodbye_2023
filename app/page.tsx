@@ -1,6 +1,14 @@
-import { Box, Container, List, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
+import { Container, List, Stack, Typography } from '@mui/material';
 import { Description, ListItemWithText, Map } from './components';
+
+const eventList = [
+  '파티룸 꾸미기',
+  '20대 추모식',
+  '장례식 케이크 커팅식',
+  '베스트 드레서 / 워스트 드레서 투표',
+  '사진 찍기, 게임 등',
+];
 
 export default function Page() {
   return (
@@ -14,6 +22,7 @@ export default function Page() {
         }}
       >
         <Image
+          priority
           src="/happy_new_year.png"
           width={350}
           height={350}
@@ -39,11 +48,9 @@ export default function Page() {
             align="column"
             children={
               <ul style={{ marginTop: '7px' }}>
-                <li>파티룸 꾸미기</li>
-                <li>20대 추모식</li>
-                <li>장례식 케이크 커팅식</li>
-                <li>베스트 / 워스트 드레서 투표</li>
-                <li>사진 찍기, 게임 등</li>
+                {eventList.map((event, index) => (
+                  <li key={index}>{event}</li>
+                ))}
               </ul>
             }
           />
