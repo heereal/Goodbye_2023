@@ -1,5 +1,6 @@
-import Description from './Description';
+import Subtitle from './Subtitle';
 import ListItemWithText from './ListItemWithText';
 import Map from './Map';
+import Description from './Description';
 
-export { Description, ListItemWithText, Map };
+export { Description, Subtitle, ListItemWithText, Map };

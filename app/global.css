@@ -12,12 +12,6 @@ html {
   background-blend-mode: screen;
 }
 
-/* @media (min-width: 1024px) {
-  html {
-    height: 100%;
-  }
-} */
-
 body {
   color: #4b4b4b;
   text-align: right;
@@ -32,4 +26,10 @@ ul {
 li {
   line-height: 1.8;
   margin: 0;
+}
+
+@media (min-width: 1024px) {
+  span {
+    display: block;
+  }
 }

@@ -1,17 +1,32 @@
-'use client';
+import { List } from '@mui/material';
+import ListItemWithText from './ListItemWithText';
 
-import { Typography, useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+const eventList = [
+  '파티룸 꾸미기',
+  '20대 추모식',
+  '장례식 케이크 커팅식',
+  '베스트 드레서 / 워스트 드레서 투표',
+  '사진 찍기, 게임 등',
+];
 
 export default function Description() {
-  const theme = useTheme();
-  const smUp = useMediaQuery(theme.breakpoints.up('sm'));
-
   return (
-    <Typography variant="subtitle2" align="center">
-      2023년 연말 20대 마지막 밤을 맞이하여 귀하의 참석을 요청드립니다.
-      {smUp && <br />}
-      부디 자리에 참석하여 빛내 주시기를 바랍니다.
-    </Typography>
+    <List disablePadding>
+      <ListItemWithText label="장소" value="인계동 어딘가의 파티 룸" />
+      <ListItemWithText label="날짜" value="2023년 12월 23일 토요일" />
+      <ListItemWithText label="시간" value="오후 8시" />
+      <ListItemWithText label="드레스 코드" value="장례식 드레스 with Black" />
+      <ListItemWithText
+        label="일정"
+        align="column"
+        children={
+          <ul style={{ marginTop: '7px' }}>
+            {eventList.map((event, index) => (
+              <li key={index}>{event}</li>
+            ))}
+          </ul>
+        }
+      />
+    </List>
   );
 }

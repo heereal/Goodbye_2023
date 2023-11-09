@@ -23,10 +23,6 @@ export default function useMap() {
       // 지도를 표시할 div와 지도 옵션으로 지도를 생성함
       const map = new window.kakao.maps.Map(container, options);
 
-      // 지도 확대 축소를 제어할 수 있는 줌 컨트롤 생성
-      //   const zoomControl = new window.kakao.maps.ZoomControl();
-      //   newMap.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
-
       // 마커가 표시될 위치
       const markerPosition = new window.kakao.maps.LatLng(lat, lng);
 
