@@ -16,8 +16,8 @@ export default function Page() {
         <Image
           priority
           src="/happy_new_year.png"
-          width={350}
-          height={350}
+          width={300}
+          height={300}
           quality={100}
           alt="Happy new year"
           style={{ borderRadius: '50%' }}
