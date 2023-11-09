@@ -13,7 +13,7 @@ export default function Page() {
           alignItems: 'center',
         }}
       >
-        <Image
+        {/* <Image
           priority
           src="/happy_new_year.png"
           width={300}
@@ -21,10 +21,8 @@ export default function Page() {
           quality={100}
           alt="Happy new year"
           style={{ borderRadius: '50%' }}
-        />
-        <Typography variant="h5" sx={{ pt: 2 }}>
-          ✨연말 파티에 초대합니다.
-        </Typography>
+        /> */}
+        <Typography variant="h5">✨연말 파티에 초대합니다.</Typography>
         <Subtitle />
         <Map />
         <Description />

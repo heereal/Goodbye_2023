@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  margin: 0;
   color: #4b4b4b;
   text-align: right;
 }
@@ -29,6 +30,9 @@ li {
 }
 
 @media (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
   span {
     display: block;
   }
