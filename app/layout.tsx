@@ -13,6 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=%KAKAO_MAP_KEY%"
+        />
+      </head>
       <body>
         <MUIThemeProvider>{children}</MUIThemeProvider>
       </body>

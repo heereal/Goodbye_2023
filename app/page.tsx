@@ -1,6 +1,6 @@
 import { Box, Container, List, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
-import { Description, ListItemWithText } from './components';
+import { Description, ListItemWithText, Map } from './components';
 
 export default function Page() {
   return (
@@ -25,8 +25,8 @@ export default function Page() {
           연말 파티에 초대합니다.
         </Typography>
         <Description />
+        <Map />
         <List disablePadding>
-          {/* <Box sx={{ height: 150, background: 'gray' }}>지도 들어갈 자리</Box> */}
           <ListItemWithText label="장소" value="인계동 어딘가의 파티 룸" />
           <ListItemWithText label="날짜" value="2023년 12월 23일 토요일" />
           <ListItemWithText label="시간" value="오후 8시" />
@@ -38,7 +38,7 @@ export default function Page() {
             label="일정"
             align="column"
             children={
-              <ul>
+              <ul style={{ marginTop: '7px' }}>
                 <li>파티룸 꾸미기</li>
                 <li>20대 추모식</li>
                 <li>장례식 케이크 커팅식</li>
