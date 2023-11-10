@@ -1,5 +1,6 @@
 import '@/app/global.css';
 import MUIThemeProvider from './lib/ThemeProvider';
+import Head from 'next/head';
 
 export const metadata = {
   title: '우리의 연말 파티에 초대합니다.',
@@ -13,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body>
         <MUIThemeProvider>{children}</MUIThemeProvider>
       </body>
