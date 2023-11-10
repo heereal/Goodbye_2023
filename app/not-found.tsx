@@ -7,7 +7,7 @@ export default function NotFound() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100%',
+        minHeight: '100vh',
       }}
     >
       <Typography align="center">
