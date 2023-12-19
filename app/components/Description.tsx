@@ -16,7 +16,7 @@ export default function Description() {
         label="장소"
         children={
           <div>
-            <Typography variant="body2" sx={{ fontSize: 16, paddingTop: 2 }}>
+            <Typography variant="body2" sx={{ fontSize: 16 }}>
               위즈파티룸
             </Typography>
             <Typography variant="caption">
@@ -27,7 +27,7 @@ export default function Description() {
       />
       <ListItemWithText label="날짜" value="2023년 12월 23일 토요일" />
       <ListItemWithText label="시간" value="오후 8시" />
-      <ListItemWithText label="드레스 코드" value="특이한 옷 입기" />
+      <ListItemWithText label="드레스 코드" value="특이한 옷" />
       <ListItemWithText
         label="일정"
         align="column"

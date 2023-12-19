@@ -38,7 +38,6 @@ export default function ListItemWithText({
         sx={{
           display: 'flex',
           flexDirection: align,
-          alignItems: align === 'column' ? 'flex-start' : 'center',
           my: 0,
         }}
       />
