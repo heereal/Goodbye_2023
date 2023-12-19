@@ -6,7 +6,7 @@ declare global {
   }
 }
 
-const positon = { lat: 37.26211989865687, lng: 127.0296916342736 };
+const positon = { lat: 37.2485082, lng: 127.0778826 };
 const { lat, lng } = positon;
 
 export default function useMap() {
@@ -17,7 +17,7 @@ export default function useMap() {
 
       const options = {
         center: new window.kakao.maps.LatLng(lat, lng), // 지도의 중심 좌표
-        level: 3, // 지도의 확대 레벨
+        level: 4, // 지도의 확대 레벨
       };
 
       // 지도를 표시할 div와 지도 옵션으로 지도를 생성함
