@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 type Props = {
   label: string;
   value?: string;
-  caption?: string;
   children?: ReactNode;
   align?: 'column' | 'row';
 };
@@ -12,7 +11,6 @@ type Props = {
 export default function ListItemWithText({
   label,
   value,
-  caption = '',
   children,
   align = 'row',
 }: Props) {
@@ -32,16 +30,9 @@ export default function ListItemWithText({
         }
         secondary={
           children || (
-            <>
-              <Typography variant="body2" sx={{ fontSize }}>
-                {value}
-              </Typography>
-              {caption && (
-                <Typography variant="caption" sx={{ pl: 1 }}>
-                  {caption}
-                </Typography>
-              )}
-            </>
+            <Typography variant="body2" sx={{ fontSize }}>
+              {value}
+            </Typography>
           )
         }
         sx={{

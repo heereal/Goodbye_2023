@@ -1,4 +1,4 @@
-import { List } from '@mui/material';
+import { List, Typography } from '@mui/material';
 import ListItemWithText from './ListItemWithText';
 
 const eventList = [
@@ -14,8 +14,16 @@ export default function Description() {
     <List disablePadding>
       <ListItemWithText
         label="장소"
-        value="위즈파티룸"
-        caption="경기도 수원시 영통구 매영로 424, 지하1층"
+        children={
+          <div>
+            <Typography variant="body2" sx={{ fontSize: 16, paddingTop: 2 }}>
+              위즈파티룸
+            </Typography>
+            <Typography variant="caption">
+              경기도 수원시 영통구 매영로 424, 지하1층
+            </Typography>
+          </div>
+        }
       />
       <ListItemWithText label="날짜" value="2023년 12월 23일 토요일" />
       <ListItemWithText label="시간" value="오후 8시" />
