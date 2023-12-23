@@ -13,15 +13,14 @@ export default function Page() {
           alignItems: 'center',
         }}
       >
-        {/* <Image
-          priority
+        <Image
           src="/happy_new_year.png"
           width={300}
           height={300}
           quality={100}
           alt="Happy new year"
-          style={{ borderRadius: '50%' }}
-        /> */}
+          style={{ borderRadius: '50%', display: 'none' }}
+        />
         <Typography variant="h5">✨연말 파티에 초대합니다.</Typography>
         <Subtitle />
         <Map />
